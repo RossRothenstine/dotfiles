@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+which zsh > /dev/null || (echo "ZSH is not installed yet." && exit 1)
+
+ln -fs ~/.dotfiles/zsh/zshrc ~/.zshrc
+

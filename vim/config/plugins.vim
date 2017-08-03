@@ -1,44 +1,56 @@
-set rtp+=~/.vim/bundle/Vundle.vim
-
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
 
 " Basic settings
-Plugin 'tpope/vim-sensible'
+Plug 'tpope/vim-sensible'
 
 " Utilities
-Plugin 'tpope/vim-rsi'
-Plugin 'tpope/vim-sleuth'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
-Plugin 'godlygeek/tabular'
+Plug 'tpope/vim-rsi'
+Plug 'tpope/vim-sleuth'
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/syntastic'
+Plug 'godlygeek/tabular'
 
 " Better airline
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " List Buffers in status line
-Plugin 'bling/vim-bufferline'
+Plug 'bling/vim-bufferline'
 
-" Plugin 'Valloric/YouCompleteMe'
-Plugin 'majutsushi/tagbar'
+" Plug 'Valloric/YouCompleteMe'
+Plug 'majutsushi/tagbar'
 
 " Ctrl-P - Fuzzy Search
-Plugin 'ctrlpvim/ctrlp.vim'
+" Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 " Git awareness
-Plugin 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
 
 " Go awareness
-Plugin 'fatih/vim-go'
+Plug 'fatih/vim-go'
 
 " Typescript Awareness
-Plugin 'leafgarland/typescript-vim'
-Plugin 'Quramy/tsuquyomi'
+Plug 'leafgarland/typescript-vim'
+Plug 'Quramy/tsuquyomi'
 
 " Color scheme
-Plugin 'tomasr/molokai'
-Plugin 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
-Plugin 'altercation/vim-colors-solarized'
+Plug 'tomasr/molokai'
+Plug 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
+Plug 'altercation/vim-colors-solarized'
 
-call vundle#end()
+Plug 'editorconfig/editorconfig-vim'
+
+" Automatically enable 'paste' when pasting from a supporting terminal
+" http://www.xfree86.org/current/ctlseqs.html#Bracketed Paste Mode
+Plug 'ConradIrwin/vim-bracketed-paste'
+
+" Makes alignment a breeze (:Tab)
+Plug 'godlygeek/tabular'
+
+" Show vertical lines for tab alignment
+Plug 'Yggdroot/indentLine'
+
+call plug#end()
 

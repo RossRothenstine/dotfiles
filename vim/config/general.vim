@@ -80,6 +80,9 @@ let g:syntastic_style_warning_symbol = '✕'
 " Use eslint for javascript
 let g:syntastic_javascript_checkers = ['eslint']
 
+" Use tslint for typescript
+let g:syntastic_typescript_checkers = ['tslint']
+
 " Godef is much faster than guru ATM
 let g:go_def_mode = 'godef'
 

@@ -1,6 +1,4 @@
 " Personal .vimrc settings. Borrowed from Evan Purkhiser (https://github.com/EvanPurkhiser)
-"
-"
 
 set nocompatible
 
